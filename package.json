@@ -1,0 +1,44 @@
+{
+  "name": "heaven-eleven",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate deploy",
+    "db:studio": "prisma studio",
+    "db:seed": "npx ts-node --compiler-options '{\"module\":\"CommonJS\"}' prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.14.0",
+    "clsx": "^2.1.1",
+    "crypto": "^1.0.1",
+    "framer-motion": "^11.2.10",
+    "md5": "^2.3.0",
+    "next": "^16.2.9",
+    "next-themes": "^0.3.0",
+    "prisma": "^5.22.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "tailwind-merge": "^2.3.0",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/md5": "^2.3.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "^16.2.9",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}
